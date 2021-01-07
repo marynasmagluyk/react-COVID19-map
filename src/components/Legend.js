@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+//import styled from 'styled-component';
 
 const Legend = () => {
     return(
-        <Wrapper>
-
-        </Wrapper>
+        //<Wrapper>
+            <div>Legend</div>
+        //</Wrapper>
     )
 };
 
