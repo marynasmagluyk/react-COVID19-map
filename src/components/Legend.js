@@ -3,9 +3,7 @@ import React from 'react';
 
 const Legend = () => {
     return(
-        //<Wrapper>
             <div>Legend</div>
-        //</Wrapper>
     )
 };
 
