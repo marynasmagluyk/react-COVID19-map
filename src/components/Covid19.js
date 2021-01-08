@@ -6,7 +6,7 @@ import LoadCountriesTask from '../tasks/LoadCountriesTask';
 
 const Covid19 = () => {
 
-    const [countries, setCountries] = useState(['ig']);
+    const [countries, setCountries] = useState([]);
 
     const load = () => {
         const loadCountriesTask = new LoadCountriesTask();
