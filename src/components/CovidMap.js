@@ -1,25 +1,24 @@
 import React from 'react';
-import styled from 'styled-components';
-import {MapContainer, GeoJSON} from 'react-leaflet';
+import {Map, GeoJSON} from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'
+import './CovidMap.css'
 
 const CovidMap = ({countries}) => {
-    //console.log(countries);
+
+    const mapStyle = {
+        fillColor: 'white',
+        weight: 1,
+        color: 'grey',
+        fillOpacity: 1,
+    };
+
     return (
-        <Wrapper>
-            <MapContainer style={{height: '90vh'}}
-                          zoom={2}
-                          center={[20, 100]}>
-                <GeoJSON className='geo' data={countries}/>
-            </MapContainer>
-        </Wrapper>
+            <Map style={{height: '90vh'}}
+                          zoom={3}
+                          center={[40, 10]}>
+                <GeoJSON style={mapStyle} data={countries}/>
+            </Map>
     )
 };
-
-const Wrapper = styled.article`
-.geo {
-fill-color: white;
-}
-`;
 
 export default CovidMap;

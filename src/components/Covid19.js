@@ -17,11 +17,9 @@ const Covid19 = () => {
 
     return (
         <div>
-            {countries.length === 0 ? <Loading/> : <div> <CovidMap countries={countries}/> <Legend/></div>}
+            {countries.length === 0 ? <Loading/> : <div><CovidMap countries={countries}/> <Legend/></div>}
         </div>
     )
-
-
 };
 
 export default Covid19;
