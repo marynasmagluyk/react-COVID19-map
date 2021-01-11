@@ -32,5 +32,4 @@ const LegendItems = [
     new LegendItem('No Data', '#fff', () => true)
 ];
 
-
 export default LegendItems;
